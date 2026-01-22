@@ -4,7 +4,7 @@ metadata:
   name: test-vm
 spec:
   className: best-effort-large
-  imageName: centos-7
+  imageName: vmi-f89485cb79c43cd85
   storageClass: no-data-redundancy
   bootstrap:
     cloudInit:
