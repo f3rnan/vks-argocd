@@ -1,10 +1,10 @@
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: Cluster
 metadata:
-  name: ArgoCD-vks-demo
+  name: argocd-vks-demo
   namespace: test-ns
   labels:
-    tkg-cluster-selector: ArgoCD-vks-demo
+    tkg-cluster-selector: argocd-vks-demo
 spec:
   clusterNetwork:
     pods:
@@ -21,11 +21,11 @@ spec:
       - name: vmClass
         value: best-effort-small
       - name: storageClass
-        value: wcpglobal-storage-profile
+        value: no-data-redundancy
     controlPlane:
       replicas: 1
     workers:
       machineDeployments:
         - class: node-pool
-          name: ArgoCD-vks-demo-nodepool
+          name: argocd-vks-demo-nodepool
           replicas: 3
