@@ -29,7 +29,7 @@ spec:
       name: nginx-storage
     spec:
       accessModes: ["ReadWriteOnce"]
-      storageClassName: "worker-storagepolicy"
+      storageClassName: "no-data-redundancy"
       resources:
         requests:
           storage: 1Gi
