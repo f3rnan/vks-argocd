@@ -1,0 +1,11 @@
+apiVersion: vmoperator.vmware.com/v1alpha3
+kind: VirtualMachine
+metadata:
+  name: test-vm
+spec:
+  className: best-effort-large
+  imageName: centos-7
+  storageClass: no-data-redundancy
+  bootstrap:
+    cloudInit:
+      cloudConfig: {}
