@@ -36,6 +36,6 @@ data:
     <html>
       <body style="font-family: Arial; text-align: center;">
         <h1>Demo App - ArgoCD</h1>
-        <p>Desplegado automáticamente desde Git</p>
+        <p>Desplegado automáticamente desde Git  Hola Mundo</p>
       </body>
     </html>
